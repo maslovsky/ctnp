@@ -1,0 +1,113 @@
+* {
+  font-family: Roboto;
+}
+
+/* Main
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.book-container {
+  position: relative;
+}
+
+.book-container img {
+  position: relative;
+  max-width: 80%;
+  margin: 3rem auto -12rem;
+  filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.1));
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .book-container img {
+    position: absolute;
+    top: -7rem;
+    right: 0;
+    max-height: 362px;
+    z-index: 3;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .book-container img {
+    top: -14rem;
+    right: 0;
+    max-height: 510px;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .book-container img {
+    top: -16rem;
+    max-height: 615px;
+  }
+}
+
+/* Pros
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.pros {
+  background-image: url('../assets/england.png');
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+
+.price {
+  background-image: url('../assets/usa2.jpg');
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+
+.pros-heading {
+  margin-bottom: .3rem;
+}
+
+.pros-description {
+  opacity: .8;
+  font-weight: 300;
+}
+
+/* About Teacher
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section.teacher .teacher-photo-container{
+  text-align: start;
+}
+
+.section.teacher .teacher-description {
+  text-align: justify;
+}
+
+.section.teacher .quote {
+  display: flex;
+  border: 1px solid #e8e8e8;
+}
+
+.section.teacher .quote .photo-container,
+.section.teacher .quote .quote-body {
+  display: flex;
+}
+
+.section.teacher .quote .quote-body {
+  flex-flow: column;
+  justify-content: center;
+  padding: 0 40px;
+  background-color: rgba(0,0,0,0.01);
+}
+
+.section.teacher .quote .quote-body > .teacher-heading {
+  display: flex;
+}
+
+.section.teacher .quote .quote-body .teacher-heading {
+  margin: 0;
+}
+
+.section.teacher .quote .quote-body .quotes-image {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 5%;
+  opacity: .2;
+}
