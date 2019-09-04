@@ -68,7 +68,19 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section.teacher .photo-container {
   text-align: start;
-  width: 300px;
+  max-width: 300px;
+  padding: 3px 0 10px 10px;
+}
+
+.section.teacher .photo-container .glide__slides, 
+.section.teacher .photo-container .glide__slides li {
+  margin-bottom: 0;
+  display: flex;
+
+align-self: center;
+}
+.section.teacher .photo-container .glide__slides li img {
+  margin-top: 7px;
 }
 
 .section.teacher .teacher-description {
@@ -80,16 +92,32 @@
   border: 1px solid #e8e8e8;
 }
 
+@media (max-width: 1050px) {
+  .section.teacher .quote {
+    flex-flow: column;
+  }
+
+  .section.teacher .quote .photo-container {
+    align-self: center;
+  }
+
+  .section.teacher .quote .quote-body .teacher-heading, 
+  .section.teacher .quote .quote-body .teacher-description {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 .section.teacher .quote .photo-container,
 .section.teacher .quote .quote-body {
   display: flex;
+  background-color: rgba(0,0,0,0.01);
 }
 
 .section.teacher .quote .quote-body {
   flex-flow: column;
   justify-content: center;
   padding: 0 40px;
-  background-color: rgba(0,0,0,0.01);
 }
 
 .section.teacher .quote .quote-body > .teacher-heading {
@@ -105,9 +133,28 @@
   right: 20px;
   top: 20px;
   width: 5%;
+  min-width: 30px;
   opacity: .2;
 }
 
 .text-centered {
   text-align: center;
+}
+
+.glide__arrow {
+  width: 50px;
+  border: none;
+  box-shadow: none;
+}
+
+.glide__arrow--left {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  left: 0;
+}
+
+.glide__arrow--right {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  right: 0;
 }

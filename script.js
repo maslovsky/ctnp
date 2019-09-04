@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const glide = new Glide('.glide').mount();
+  new Glide('.glide', {
+    type: 'carousel',
+  }).mount()
+  
 
-  console.log(glide);
-
+  // const glide = new Glide('.glide').mount();
 });
