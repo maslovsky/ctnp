@@ -42,14 +42,14 @@
 /* Pros
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .pros {
-  background-image: url('/assets/england.jpg');
+  background-image: url('assets/england.jpg');
   background-size: cover;
   color: #fff;
   padding-bottom: 5rem;
 }
 
 .price {
-  background-image: url('/assets/usa.jpg');
+  background-image: url('assets/usa.jpg');
   background-size: cover;
   color: #fff;
   padding-bottom: 5rem;
