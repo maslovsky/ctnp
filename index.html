@@ -12,6 +12,8 @@
   <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/skeleton.css">
+  <link rel="stylesheet" href="styles/glide.core.min.css">
+  <link rel="stylesheet" href="styles/glide.theme.min.css">
   <link rel="stylesheet" href="vendor.css">
   <link rel="stylesheet" href="main.css">
 </head>
@@ -21,13 +23,13 @@
   <div class="section hero">
     <div class="container">
       <div class="row">
-        <div class="one-half column">
+        <div class="one-half column text-centered">
           <h4 class="hero-heading">
             <div>Сдай ЦТ лучше других!</div>
             <div>Учись, где хочешь<div>
           </h4>
           <p class="description">
-            КУРС “ЦТ - без проблем!” дает возможность поступить в понравившийся университет, а не туда, где проходной балл пониже
+            КУРС “ЦТ - без проблем!” дает возможность поступить в понравившийся университет, а не туда, где проходной балл пониже!
           </p>
         </div>
         <div class="one-half column book-container">
@@ -74,7 +76,19 @@
     <div class="container">
         <div class="quote">
           <div class="photo-container">
-            <img src="assets/artyom.jpg" width="300px"/>
+           <div class="glide"> 
+              <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                  <li class="glide__slide"><img src="assets/teacher/photo1.png" width="300px" /></li>
+                  <li class="glide__slide"><img src="assets/teacher/photo2.png" width="300px" /></li>
+                  <li class="glide__slide"><img src="assets/teacher/photo3.png" width="300px" /></li>
+                </ul>
+              </div>
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+              </div>
+            </div>
           </div>
           <div class="quote-body">
             <img src="assets/quotes.png" class="quotes-image" />
@@ -135,22 +149,8 @@
       </div>
     </div>
   </div>
-  
-  <div class="section categories">
-    <div class="container">
-      <h3 class="section-heading">Responsive Images</h3>
-      <p class="section-description">Skeleton images sit easily in grid with .u-max-full-width class. I suggest exploring solution to serving different images based on device size.</p>
-      <div class="row">
-        <div class="one-half column category">
-          <img class="u-max-full-width" src="assets/artyom.jpg">
-        </div>
-        <div class="one-half column category">
-          <img class="u-max-full-width" src="assets/artyom.jpg">
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <script src="script.js" type="module"></script>
+  <script src="scripts/glide.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
