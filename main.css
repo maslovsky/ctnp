@@ -160,43 +160,8 @@ align-self: center;
   right: 0;
 }
 
-
-
-/* parallax
-*/
-
-@media (max-width: 1150px) {
-  .pros, .price {
-    background-size: 110%;
-  }
-}
-
-@media (max-width: 920px) {
-  .pros, .price {
-    background-size: 150%;
-  }
-}
-
-@media (max-width: 750px) {
-  .pros, .price {
-    background-size: 200%;
-  }
-}
-
-@media (max-width: 705px) {
-  .pros, .price {
-    background-size: 260%;
-  }
-}
-
-@media (max-width: 500px) {
-  .pros, .price {
-    background-size: 350%;
-  }
-}
-
-@media (max-width: 400px) {
-  .pros, .price {
-    background-size: 500%;
-  }
+.pros, .price {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
