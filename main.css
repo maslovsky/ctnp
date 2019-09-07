@@ -19,12 +19,30 @@
   background-image: url('assets/england.jpg');
   background-size: cover;
   color: #fff;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .price {
   background-image: url('assets/usa.jpg');
   background-size: cover;
   color: #fff;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 450px) {
+  .pros {
+    background-image: url('assets/england.mobile.jpg');
+    background-attachment: initial;
+  }
+  
+  .price {
+    background-image: url('assets/usa.mobile.jpg');
+    background-attachment: initial;
+  }
 }
 
 .pros-heading {
@@ -129,12 +147,6 @@ align-self: center;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
   right: 0;
-}
-
-.pros, .price {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .phone-link {
