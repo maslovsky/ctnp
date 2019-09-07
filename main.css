@@ -195,3 +195,20 @@ align-self: center;
     font-size: 1.5rem;
   }
 }
+
+.price-section:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+.how-to-pay {
+  list-style-type: disc;
+}
+
+.how-to-pay li {
+  margin: 5px;
+}
+
+.site-link {
+  color: white;
+  font-weight: bold;
+}
