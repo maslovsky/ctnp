@@ -2,6 +2,17 @@
   font-family: Roboto;
 }
 
+.section {
+  padding: 10rem 0;
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  .section {
+    padding: 4rem 0;
+  }
+}
+
 /* Pros
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .pros {
@@ -65,7 +76,6 @@ align-self: center;
   .section.teacher .quote .quote-body .teacher-heading, 
   .section.teacher .quote .quote-body .teacher-description {
     justify-content: center;
-    text-align: center;
   }
 }
 
@@ -78,7 +88,8 @@ align-self: center;
 .section.teacher .quote .quote-body {
   flex-flow: column;
   justify-content: center;
-  padding: 0 40px;
+  padding: 0 20px;
+  position: relative;
 }
 
 .section.teacher .quote .quote-body > .teacher-heading {
@@ -91,8 +102,8 @@ align-self: center;
 
 .section.teacher .quote .quote-body .quotes-image {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 5px;
+  top: 5px;
   width: 5%;
   min-width: 30px;
   opacity: .2;
@@ -160,4 +171,27 @@ align-self: center;
 
 .hero .description {
   font-size: 2rem;
+}
+
+
+@media (max-width: 950px) {
+  .hero .hero-heading {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 785px) {
+  .hero .hero-heading {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 625px) {
+  .hero .hero-heading {
+    font-size: 3rem;
+  }
+
+  .hero .description {
+    font-size: 1.5rem;
+  }
 }
