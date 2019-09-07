@@ -151,3 +151,13 @@ align-self: center;
     margin: 0;
   }
 }
+
+.hero .hero-heading {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 6rem;
+}
+
+.hero .description {
+  font-size: 2rem;
+}
