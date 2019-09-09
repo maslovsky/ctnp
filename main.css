@@ -159,6 +159,7 @@ align-self: center;
 
 .social-links, .info {
   margin-top: 2.5rem;
+  display: block;
 }
 
 .last-phone {
